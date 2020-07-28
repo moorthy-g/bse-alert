@@ -31,7 +31,6 @@ const fetchAlerts = async () => {
       else newData.push(data[i]);
     }
     config.lastNewsTime = getNewsTime(data[0]);
-    console.log(config.keywords);
     announce(newData);
   } catch (err) {}
 
